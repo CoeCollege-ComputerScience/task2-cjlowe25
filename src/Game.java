@@ -1,3 +1,5 @@
+import java.util.HashMap;
+
 /**
  *  This class is the main class of the "World of Zuul" application. 
  *  "World of Zuul" is a very simple, text based adventure game.  Users 
@@ -42,12 +44,16 @@ public class Game
         Room pool = new Room("in a seedy pool hall.");
         
         // initialise room exits
-        outside.setExits(null, theatre, lab, pub, null, null);
-        theatre.setExits(null, null, null, outside, null, null);
-        pub.setExits(null, outside, null, null, pool, null);
-        lab.setExits(outside, office, null, null, null, null);
-        office.setExits(null, null, null, lab, null, null);
-        pool.setExits(null, null, null, null, null, pub);
+        outside.setExit("east", theatre);
+        outside.setExit("south", lab);
+        outside.setExit("west", pub);
+        theatre.setExit("west", outside);
+        pub.setExit("east", outside);
+        pub.setExit("up", pool);
+        lab.setExit("north", outside);
+        lab.setExit("east", office);
+        office.setExit("west", lab);
+        pool.setExit("down", pub);
 
         currentRoom = outside;  // start game outside
     }
