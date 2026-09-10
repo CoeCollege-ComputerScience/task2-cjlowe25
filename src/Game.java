@@ -39,13 +39,15 @@ public class Game
         Room pub = new Room("in the campus pub");
         Room lab = new Room("in a computing lab");
         Room office = new Room("in the computing admin office");
+        Room pool = new Room("in a seedy pool hall.");
         
         // initialise room exits
         outside.setExits(null, theatre, lab, pub, null, null);
         theatre.setExits(null, null, null, outside, null, null);
-        pub.setExits(null, outside, null, null, null, null);
+        pub.setExits(null, outside, null, null, pool, null);
         lab.setExits(outside, office, null, null, null, null);
         office.setExits(null, null, null, lab, null, null);
+        pool.setExits(null, null, null, null, null, pub);
 
         currentRoom = outside;  // start game outside
     }
@@ -88,6 +90,10 @@ public class Game
             System.out.print("south ");
         if(currentRoom.westExit != null)
             System.out.print("west ");
+        if(currentRoom.upExit != null)
+            System.out.print("up ");
+        if(currentRoom.downExit != null)
+            System.out.print("down ");
         System.out.println();
     }
 
@@ -156,6 +162,10 @@ public class Game
             nextRoom = currentRoom.southExit;
         if(direction.equals("west"))
             nextRoom = currentRoom.westExit;
+        if(direction.equals("up"))
+            nextRoom = currentRoom.upExit;
+        if(direction.equals("down"))
+            nextRoom = currentRoom.downExit;
 
         if (nextRoom == null)
             System.out.println("There is no door!");
@@ -171,6 +181,10 @@ public class Game
                 System.out.print("south ");
             if(currentRoom.westExit != null)
                 System.out.print("west ");
+            if(currentRoom.upExit != null)
+                System.out.print("up ");
+            if(currentRoom.downExit != null)
+                System.out.print("down ");
             System.out.println();
         }
     }
