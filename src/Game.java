@@ -41,11 +41,11 @@ public class Game
         Room office = new Room("in the computing admin office");
         
         // initialise room exits
-        outside.setExits(null, theatre, lab, pub);
-        theatre.setExits(null, null, null, outside);
-        pub.setExits(null, outside, null, null);
-        lab.setExits(outside, office, null, null);
-        office.setExits(null, null, null, lab);
+        outside.setExits(null, theatre, lab, pub, null, null);
+        theatre.setExits(null, null, null, outside, null, null);
+        pub.setExits(null, outside, null, null, null, null);
+        lab.setExits(outside, office, null, null, null, null);
+        office.setExits(null, null, null, lab, null, null);
 
         currentRoom = outside;  // start game outside
     }

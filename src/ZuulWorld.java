@@ -1,4 +1,6 @@
-   public class ZuulWorld
+// Colton Lowe
+
+public class ZuulWorld
    {
        public static void main(String[] args)
       {
