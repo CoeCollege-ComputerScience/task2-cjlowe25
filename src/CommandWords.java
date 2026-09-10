@@ -12,7 +12,7 @@ public class CommandWords
 {
     // a constant array that holds all valid command words
     private static final String[] validCommands = {
-        "go", "quit", "help"
+        "go", "quit", "help", "look"
     };
 
     /**
@@ -37,4 +37,11 @@ public class CommandWords
         return false;
     }
 
+    public String showAll(){
+        String back = "";
+        for (int i = 0; i < validCommands.length; i++){
+            back += validCommands[i] + "\n";
+        }
+        return back;
+    }
 }

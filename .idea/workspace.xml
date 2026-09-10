@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="20b53cbe-acf3-4d1d-9e98-5852063ed5b2" name="Changes" comment="getExitString Decoupled Game, Room">
+    <list default="true" id="20b53cbe-acf3-4d1d-9e98-5852063ed5b2" name="Changes" comment="Decoupling - Game, Room">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Zuul/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zuul/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Zuul/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zuul/Room.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zuul/CommandWords.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zuul/CommandWords.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CommandWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CommandWords.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Parser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +98,15 @@
       <option name="project" value="LOCAL" />
       <updated>1789065289479</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Decoupling - Game, Room">
+      <option name="closed" value="true" />
+      <created>1789076565202</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1789076565203</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +118,7 @@
     <MESSAGE value="printLocationInfo" />
     <MESSAGE value="Reduced Coupling, getExit()" />
     <MESSAGE value="getExitString Decoupled Game, Room" />
-    <option name="LAST_COMMIT_MESSAGE" value="getExitString Decoupled Game, Room" />
+    <MESSAGE value="Decoupling - Game, Room" />
+    <option name="LAST_COMMIT_MESSAGE" value="Decoupling - Game, Room" />
   </component>
 </project>
