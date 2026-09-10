@@ -52,6 +52,22 @@ public class Room
             downExit = down;
     }
 
+    public Room getExit(String direction){
+        if(direction.equals("north"))
+            return northExit;
+        if(direction.equals("east"))
+            return eastExit;
+        if(direction.equals("south"))
+            return southExit;
+        if(direction.equals("west"))
+            return westExit;
+        if(direction.equals("up"))
+            return upExit;
+        if(direction.equals("down"))
+            return downExit;
+        return null;
+    }
+
     /**
      * Return the description of the room (the one that was defined
      * in the constructor).
