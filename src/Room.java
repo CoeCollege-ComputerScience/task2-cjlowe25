@@ -14,13 +14,13 @@
 
 public class Room 
 {
-    public String description;
-    public Room northExit;
-    public Room southExit;
-    public Room eastExit;
-    public Room westExit;
-    public Room upExit;
-    public Room downExit;
+    private String description;
+    private Room northExit;
+    private Room southExit;
+    private Room eastExit;
+    private Room westExit;
+    private Room upExit;
+    private Room downExit;
 
     /**
      * Create a room described "description". Initially, it has
@@ -66,6 +66,23 @@ public class Room
         if(direction.equals("down"))
             return downExit;
         return null;
+    }
+
+    public String getExitString(){
+        String message = "You are " + getDescription() + "\nExits: ";
+        if(northExit != null)
+            message += "\nnorth ";
+        if(eastExit != null)
+            message += "\neast ";
+        if(southExit != null)
+            message += "\nsouth ";
+        if(westExit != null)
+            message += "\nwest ";
+        if(upExit != null)
+            message += "\nup ";
+        if(downExit != null)
+            message += "\ndown ";
+        return message;
     }
 
     /**

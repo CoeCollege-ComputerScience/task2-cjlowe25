@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="20b53cbe-acf3-4d1d-9e98-5852063ed5b2" name="Changes" comment="printLocationInfo">
-      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
+    <list default="true" id="20b53cbe-acf3-4d1d-9e98-5852063ed5b2" name="Changes" comment="Reduced Coupling, getExit()">
       <change beforePath="$PROJECT_DIR$/src/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Room.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +78,15 @@
       <option name="project" value="LOCAL" />
       <updated>1789064246434</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Reduced Coupling, getExit()">
+      <option name="closed" value="true" />
+      <created>1789064732299</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1789064732299</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,6 +96,7 @@
     <MESSAGE value="UpDown" />
     <MESSAGE value="Pool Hall accessible" />
     <MESSAGE value="printLocationInfo" />
-    <option name="LAST_COMMIT_MESSAGE" value="printLocationInfo" />
+    <MESSAGE value="Reduced Coupling, getExit()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reduced Coupling, getExit()" />
   </component>
 </project>
